@@ -1,0 +1,124 @@
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* header-section */
+
+.jon-header .navbar-brand{
+    font-size: 25px;
+    font-weight: 500;
+}
+.jon-header span{
+    display: inline-block;
+    background: #6278df;
+    color: #fff;
+    text-align: center;
+    height: 43px;
+    width: 40px;
+    border-radius: 10px;
+    position: relative;
+    top: 3px;
+    font-size: 28px;
+}
+.jon-menu .nav-link{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* slider-section */
+.slider-section{
+    background: url(./img/mbr-10.jpg) no-repeat center center;
+    padding: 200px 0;
+    position: relative;
+    z-index: 99;
+}
+.slider-section::after{
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.slider-caption h4{
+    margin-bottom: 35px;
+}
+.slider-caption h2{
+    margin-bottom: 50px;
+    font-size: 46px;
+}
+.slider-caption .form-control{
+    padding: 15px 20px;
+
+}
+.slider-caption .btn{
+    background-color: #5ba533;
+   
+    padding: 10px 30px;
+    font-weight: 600;
+}
+/* about sectio */
+.about-section{
+    background-color:#f7f9ff;
+   
+}
+.about-text-left{
+    margin-top:120px ;
+}
+.about-text-left .lead{
+    line-height: 1.9rem;
+    font-size: 20px;
+}
+.feature-item{
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+}
+.left-img-sec{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.left-text-sec{
+    width: 60%;
+    padding: 19px;
+    
+}
+.left-img-sec img{
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -80px;
+}
+
+/* portfolio-item hover */
+.portfolio-item{}
+.portfolio-item a{
+    position: relative;
+    display: block;
+}
+.portfolio-item a::after{
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(98, 120, 223, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+
+}
+.portfolio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+.main-section-bg{
+    background: #f2f4fd;
+}
+
